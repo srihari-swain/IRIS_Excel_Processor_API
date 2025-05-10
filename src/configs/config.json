@@ -1,0 +1,17 @@
+{
+    "title": "IRIS-Excel-API",
+    "description": "",
+    "version": "0.0.1",
+    "docs_url": "/docs",
+    "redoc_url": "/redoc",
+    "excel_file_path": "src/Data/capbudg.xls",
+    "app": "src.comms.server.rest_api.api:app",
+    "host": "0.0.0.0",
+    "port": 9090,
+    "reload": false,
+    "workers": 1,
+    "allow_origins": ["*"],
+    "allow_credentials": true,
+    "allow_methods": ["*"],
+    "allow_headers": ["*"]
+}
