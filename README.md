@@ -72,7 +72,7 @@ The API loads configuration from a JSON file located at `src/configs/config.json
     "version": "0.0.1",
     "docs_url": "/docs",
     "redoc_url": "/redoc",
-    "excel_file_path": "src/Data/capbudg.xls",
+    "excel_file_path": "src/data/capbudg.xls",
     "app": "src.comms.server.rest_api.api:app",
     "host": "0.0.0.0",
     "port": 9090,
@@ -99,7 +99,7 @@ To use a different Excel file, simply update the `excel_file_path` parameter in 
 ## Installation and Setup
 
 ### Prerequisites
-- Python 
+- Python 3.10
 - pip (Python package installer)
 
 ### Setting Up the Environment
@@ -128,6 +128,12 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+### Important:
+Before running the main file, set the Python path so that your modules are correctly found:
+```bash
+export PYTHONPATH=$(pwd)
+
+```
 
 ### Running the Application
 To run the application, use the FastAPI server:
@@ -141,6 +147,9 @@ This will start the API server with hot-reloading enabled for development.
 The API documentation is available at:
 - Swagger UI: `/docs` (or custom URL from config)
 - ReDoc: `/redoc` (or custom URL from config)
+
+### For quick and user-friendly API testing, this project includes a Streamlit app that offers an efficient and intuitive alternative to tools like Postman.
+
 
 ## Streamlit Client
 The project includes a Streamlit web interface for easier interaction with the API.
