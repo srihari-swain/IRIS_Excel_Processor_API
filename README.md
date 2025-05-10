@@ -2,13 +2,12 @@
 A FastAPI-based REST API for extracting and analyzing data from Excel files.
 
 ## Author Information
-- **Developer:** [Your Name]
-- **Email:** [your.email@example.com]
-- **GitHub:** [YourGitHubUsername]
+- **Developer:** Srihari Swain
+- **Email:** srihariswain2001@gmail.com
+- **GitHub:** https://github.com/srihari-swain
 
 ## Project Timeline
-- **Development Time:** Approximately [X] hours
-- **Completion Date:** [Month Year]
+- **Development Time:** Approximately 10 hours
 
 ## Overview
 This project provides a robust API for interacting with Excel files, allowing users to:
@@ -22,13 +21,11 @@ The system is designed with clean architecture principles, separating concerns b
 ```
 ├── __init__.py
 └── src
-    ├── auto_run.sh
     ├── comms
     │   ├── client
     │   │   └── streamlit
     │   │       └── app.py
     │   └── server
-    │       ├── __init__.py
     │       └── rest_api
     │           └── api.py
     ├── configs
@@ -109,7 +106,7 @@ To use a different Excel file, simply update the `excel_file_path` parameter in 
 1. Clone the repository:
 ```bash
 git clone https://github.com/srihari-swain/IRIS_Excel_Processor_API.git
-cd IRIS_Excel_Processor_API.git
+cd IRIS_Excel_Processor_API
 ```
 
 2. Create a Python virtual environment:
@@ -157,6 +154,10 @@ streamlit run src/comms/client/streamlit/app.py
 ```
 
 This will start the web interface and automatically open it in your default web browser.
+
+
+
+
 
 Below is a screenshot of the Streamlit app in action, which provides a convenient way to interact with the API without needing to make API requests manually.
 
